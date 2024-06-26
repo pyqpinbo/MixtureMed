@@ -1,0 +1,16 @@
+Package: MixtureMed
+Title: Heterogeneous mediation analysis
+Version: 0.1
+Date: 2024-06-26
+Authors@R: c(person(given = "Youquan",
+                    family = "Pei",
+                    role = c("aut", "cre"), 
+                    email = "ypeistat@sdu.edu.cn"))
+Depends: R (>= 4.0.2)
+Imports: 
+   e1071,
+   rpart 
+Description: What the package does, with more detail. # one paragraph
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.1.2
