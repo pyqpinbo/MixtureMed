@@ -1,7 +1,5 @@
 1. Installation
 
-   To install the development version of MixtureMed, it's easiest to use the 'devtools' package. 
-
    install.packages("devtools")
 
    library(devtools)
