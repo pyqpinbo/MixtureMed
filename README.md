@@ -1,19 +1,19 @@
-1. Installation
+# Installation
 
-   install.packages("devtools")
+install.packages("devtools")
 
-   library(devtools)
+library(devtools)
 
-   install_github("pyqpinbo/MixtureMed")
+install_github("pyqpinbo/MixtureMed")
 
-   library(MixtureMed)
+library(MixtureMed)
 
-2. References
+# References
 
-   裴有权，基于机器学习的异质性中介效应模型，2024, 工作论文
+裴有权，基于机器学习的异质性中介效应模型，2024, 入选全国青年统计学者优秀论文.
 
-3. Development
+# Development
 
-   This R package is developed by Youquan Pei (ypeistat@sdu.edu.cn)
+This R package is developed by 裴有权 (ypeistat@sdu.edu.cn)
 
 
