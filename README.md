@@ -4,8 +4,11 @@
 To install the development version of MixtureMed, it's easiest to use the 'devtools' package. 
 
 install.packages("devtools")
+
 library(devtools)
+
 install_github("pyqpinbo/MixtureMed")
+
 library(MixtureMed)
 
 2. References
