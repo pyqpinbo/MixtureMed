@@ -12,8 +12,8 @@ for inference on subgroup-specific natural indirect and direct effects (NIE/NDE)
 You can install the development version of **MixtureMed** from GitHub:
 
 ```r
-# install.packages("remotes")  # if not already installed
-remotes::install_github("pyqpinbo/MixtureMed")
+# install.packages("devtools")  # if not already installed
+devtools::install_github("pyqpinbo/MixtureMed")
 
 
 # Load the package
@@ -24,15 +24,15 @@ library(MixtureMed)
 set.seed(2025)
 
 # Step 1: Simulate heterogeneous mediation data
-sim <- data_generate(n = 300, setting = 2)
+sim <- data_generate(n = 1000, setting = 1)
 
 # Step 2: Fit the tree-based heterogeneous mediation model
 fit <- Med_EM_tree(
   K          = 2,
   data_model = sim$data,
   compute_ci = TRUE,
-  sims_ci    = 100,
-  verbose    = FALSE
+  sims_ci    = 500,
+  verbose    = TRUE
 )
 
 # Step 3: Display estimated subgroup-specific parameters
