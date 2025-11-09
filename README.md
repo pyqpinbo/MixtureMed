@@ -14,3 +14,38 @@ You can install the development version of **MixtureMed** from GitHub:
 ```r
 # install.packages("remotes")  # if not already installed
 remotes::install_github("pyqpinbo/MixtureMed")
+
+
+# Load the package
+library(MixtureMed)
+
+
+# Set random seed for reproducibility
+set.seed(2025)
+
+# Step 1: Simulate heterogeneous mediation data
+sim <- data_generate(n = 300, setting = 2)
+
+# Step 2: Fit the tree-based heterogeneous mediation model
+fit <- Med_EM_tree(
+  K          = 2,
+  data_model = sim$data,
+  compute_ci = TRUE,
+  sims_ci    = 100,
+  verbose    = FALSE
+)
+
+# Step 3: Display estimated subgroup-specific parameters
+fit$coefs
+
+# Step 4: Display estimated confidence intervals
+fit$ci
+
+| Function           | Description                                                  |
+| ------------------ | ------------------------------------------------------------ |
+| `data_generate()`  | Simulate heterogeneous mediation data under three settings   |
+| `Med_EM()`         | EM estimation for mixture mediation models (parametric π(X)) |
+| `Med_EM_tree()`    | EM estimation with tree-based nonparametric π(X)             |
+| `align_coefs()`    | Align component labels to correct label switching            |
+| `update_pi_tree()` | Internal function for tree-based π(X) updates                |
+
