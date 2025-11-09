@@ -41,11 +41,4 @@ fit$coefs
 # Step 4: Display estimated confidence intervals
 fit$ci
 
-| Function           | Description                                                  |
-| ------------------ | ------------------------------------------------------------ |
-| `data_generate()`  | Simulate heterogeneous mediation data under three settings   |
-| `Med_EM()`         | EM estimation for mixture mediation models (parametric π(X)) |
-| `Med_EM_tree()`    | EM estimation with tree-based nonparametric π(X)             |
-| `align_coefs()`    | Align component labels to correct label switching            |
-| `update_pi_tree()` | Internal function for tree-based π(X) updates                |
 
