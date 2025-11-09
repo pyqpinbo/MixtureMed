@@ -1,0 +1,16 @@
+Package: MixtureMed
+Title: Heterogeneous Mediation Analysis via Finite Mixture Models
+Version: 0.1.0
+Authors@R: 
+    person("Youquan", "Pei", email = "ypeistat@sdu.edu.cn", role = c("aut", "cre"))
+Description: Finite mixture mediation models with tree-based mixing proportions.
+License: GPL-3
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+Depends: R (>= 4.3.0)
+Imports:
+    rpart,
+    stats
+Suggests:
+    graphics
